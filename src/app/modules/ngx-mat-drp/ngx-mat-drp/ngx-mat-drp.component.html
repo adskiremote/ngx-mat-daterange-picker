@@ -2,6 +2,7 @@
   
   <mat-form-field class="ngx-mat-drp-date-display">
     <input class="ngx-mat-drp-date-input"
+          [ngClass]="{'disabled' : disableInput}"
           matInput [placeholder]="options.placeholder"
           [value]="selectedDateRange"
           [matTooltip]="selectedDateRange"
@@ -11,6 +12,7 @@
           #calendarInput >
     <div matSuffix 
           class="ngx-mat-drp-calendar"
+          [ngClass]="{'disabled' : disableInput}"
           (click)="openCalendar($event)">
     </div>
   </mat-form-field>
