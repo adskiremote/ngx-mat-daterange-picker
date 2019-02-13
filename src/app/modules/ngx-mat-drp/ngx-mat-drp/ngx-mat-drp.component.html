@@ -5,6 +5,7 @@
           matInput [placeholder]="options.placeholder"
           [value]="selectedDateRange"
           [matTooltip]="selectedDateRange"
+          [disabled]="disableInput"
           (click)="openCalendar($event)"
           readonly
           #calendarInput >

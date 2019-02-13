@@ -36,6 +36,8 @@ export class NgxMatDrpComponent implements OnInit, OnDestroy {
   readonly selectedDateRangeChanged: EventEmitter<Range> = new EventEmitter<Range>();
   @Input()
   options: NgxDrpOptions;
+  @Input()
+  disableInput: boolean;
   private rangeUpdate$: Subscription;
   selectedDateRange = '';
 
